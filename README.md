@@ -71,3 +71,17 @@ Topic prerequisites
 - Iterate till the leftmost element in array 1 (right half) is greter than rightmost element in array 2 (left half)
 - If the element index reaches zero, assign the leftmax to be -infinity
 - If the element index reaches maximum length, assign the rightmax to be infinity
+
+
+## 6. Zigzag Conversion
+
+[![Solve](https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/24/Actions-document-edit-icon.png)](https://leetcode.com/problems/zigzag-conversion/)
+
+Topic prerequisites
+
+- Matrix
+
+### Method to solve
+
+- Iterate through the string and keep increasing the column count till length of the string.
+- For row count, increase till the extremes are reached. Reverse the directions at extremes.
