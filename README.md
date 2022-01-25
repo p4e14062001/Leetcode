@@ -85,3 +85,21 @@ Topic prerequisites
 
 - Iterate through the string and keep increasing the column count till length of the string.
 - For row count, increase till the extremes are reached. Reverse the directions at extremes.
+
+
+## 7. Reverse Integer
+
+[![Solve](https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/24/Actions-document-edit-icon.png)](https://leetcode.com/problems/reverse-integer/)
+
+Topic prerequisites
+
+- String conversion
+
+### Method to solve
+
+- Find the sign
+- Convert integer to its absolute value
+- Convert the integer to string and reverse it
+- Convert it back to the integer and multiply the sign
+- Convert it to integer
+- Check for boundary cases
