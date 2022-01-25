@@ -33,3 +33,23 @@ Topic prerequisites
 - Continue to do this with the extra digits, the larger number has.
 - Finally, if carry has a non zero value, add the node in the end.
 - Return the head of the longer linked list.
+
+
+## 3. Longest Substring Without Repeating Characters
+
+[![Solve](https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/24/Actions-document-edit-icon.png)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+Topic prerequisites
+
+- Sliding Window
+
+### Method to solve
+
+- Intialize an empty set, left pointer and result as 0.
+- Start iterating using a right pointer.
+- Using right pointer, find if the element at right pointer is in set.
+- If the element at right pointer is in set, remove the left pointer element from the set as it is the cause of repetition.
+- Keep removing until, no element is repeated.
+- Add the right pointer element in the set.
+- Maximize result as difference of left and right pointer including both the extreme elements.
+- Return the result.
