@@ -53,3 +53,21 @@ Topic prerequisites
 - Add the right pointer element in the set.
 - Maximize result as difference of left and right pointer including both the extreme elements.
 - Return the result.
+
+
+## 4. Median of Two Sorted Arrays
+
+[![Solve](https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/24/Actions-document-edit-icon.png)](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+
+Topic prerequisites
+
+- Binary Search
+
+### Method to solve
+
+- The number of elements on the left side and right side will be equal even after merging
+- While iterating run only through the smaller list and that will give the remaining elements required to complete the array in the left half of the merged list
+- Iterate till the leftmost element in array 2 (right half) is greter than rightmost element in array 1 (left half)
+- Iterate till the leftmost element in array 1 (right half) is greter than rightmost element in array 2 (left half)
+- If the element index reaches zero, assign the leftmax to be -infinity
+- If the element index reaches maximum length, assign the rightmax to be infinity
